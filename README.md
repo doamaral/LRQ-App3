@@ -8,7 +8,8 @@
 5. rails g devise:views
 6. rake db:migrate
 
-* System dependencies
+* Convention Over Configuration (CoC)
+When create a column that "references" other table, just use de singular name of the table so that Rails get to know that it's a FK
 
 * Configuration
 
