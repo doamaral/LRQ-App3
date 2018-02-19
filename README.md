@@ -1,11 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* devise
+1. Add the gem into Gemfile
+2. Run command: bundle install
+3. rails g devise:install (Create the User model)
+4. rails g devise user (associate with devise)
+5. rails g devise:views
+6. rake db:migrate
 
 * System dependencies
 
