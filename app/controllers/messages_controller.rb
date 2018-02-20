@@ -5,19 +5,18 @@ class MessagesController < ApplicationController
 
   def index
     @messages = @conversation.messages
-    @message = @conversation.message.new
+    @message = @conversation.messages.new
   end
-
   def new
-    @message = @conversation.message.new
+    @message = @conversation.messages.new
   end
 
   def create
-    @message = @conversation.message.new(message_params)
+    @message = @conversation.messages.new(message_params)
     if @message.save
       redirect_to conversation_messages_path(@conversation)
+    end
   end
-
   private
   def message_params
     params.require(:message).permit(:body, :user_id)
