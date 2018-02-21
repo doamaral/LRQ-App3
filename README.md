@@ -8,19 +8,4 @@
 5. rails g devise:views
 6. rake db:migrate
 
-* Convention Over Configuration (CoC)
-When create a column that "references" other table, just use de singular name of the table so that Rails get to know that it's a FK
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Defining Scope into a Model. It's a created method that selects a subset of the method
